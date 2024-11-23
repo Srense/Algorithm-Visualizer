@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting Algorithm Visualizer</h1>
+    </header>
+    <div class="control-panel">
+        <label for="algorithm">Choose Algorithm:</label>
+        <select id="algorithm"> 
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="quickSort">Quick Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+        </select>
+        
+        <label for="arraySize">Array Size:</label>
+        <input type="range" id="arraySize" min="10" max="100" value="50">
+        
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="1" max="100" value="50">
+        
+        <button id="shuffleArray">Shuffle Array</button>
+        <button id="startSorting">Start Sorting</button>
+        <button id="pauseSorting">Pause</button>
+
+    </div>
+    <div id="canvas-container"></div>
+    <footer>
+        <p>Compare the performance of different sorting algorithms visually.</p>
+        <p>Time complexities: Bubble Sort - O(n^2), Quick Sort - O(n log n), Merge Sort - O(n log n)</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
